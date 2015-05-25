@@ -3,10 +3,7 @@
 <section id="main">
   <ul id="todo-list">
     {{#each todo in model}}
-      <li class="completed">
-        <input type="checkbox" class="toggle">
-        <label>{{todo.title}}</label><button class="destroy"></button>
-      </li>
+      {{todo-item todo=todo}}
     {{/each}}
     {{!-- <li class="completed">
       <input type="checkbox" class="toggle">
